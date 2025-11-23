@@ -13,7 +13,7 @@ const Banner = () => {
                             src={heroImg1}
                             className="h-[400px] object-cover rounded-2xl shadow-2xl"
                             alt='hero image'
-                            
+                            loading='eager'
                         />
                     </div>
                     <div className='flex-1'>
