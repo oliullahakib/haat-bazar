@@ -2,7 +2,7 @@ import ProductCard from '@/components/Shared/ProductCard';
 import Link from 'next/link';
 import React from 'react';
 
-const NearestProduct = async() => {
+const TopProducts = async() => {
     const res = await fetch(`http://localhost:3100/products?short=true&limit=4`)
     const topProducts= await res.json()
     return (
@@ -25,4 +25,4 @@ const NearestProduct = async() => {
     );
 };
 
-export default NearestProduct;
+export default TopProducts;
