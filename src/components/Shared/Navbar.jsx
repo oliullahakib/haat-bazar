@@ -9,7 +9,7 @@ const Navbar = () => {
         <li> <Link href={"/all-products"}>All Products</Link></li>
     </>
     return (
-        <div className="navbar glass-card sticky top-0 shadow-sm">
+        <div className="navbar glass-card sticky z-10 top-0 shadow-sm">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost  lg:hidden">
@@ -20,7 +20,7 @@ const Navbar = () => {
                         className="menu menu-sm dropdown-content bg-base-300 rounded-box z-1 mt-3 w-52 p-4 shadow">
                         {links}
                         <div className='flex flex-col gap-3'>
-                            <Link href={"/login"} className="btn primary-btn">Login</Link>
+                            <Link href={"/login"} className="btn btn-primary">Login</Link>
                             <Link href={"/register"} className="btn w-full secondary-btn ">Register</Link>
                         </div>
                     </ul>
@@ -33,7 +33,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end hidden lg:flex">
-                <Link href={"/login"} className="btn primary-btn">Login</Link>
+                <Link href={"/login"} className="btn btn-primary">Login</Link>
                 <Link href={"/register"} className="btn secondary-btn mx-3">Register</Link>
             </div>
         </div>

@@ -11,10 +11,19 @@
 .linear-text{
   @apply bg-linear-to-bl from-[#00A63E] to-[#0E542B] text-transparent bg-clip-text
 }
-.primary-btn{
-  @apply bg-[#00A63E] rounded-xl border-none px-4
+.btn-primary{
+  @apply bg-[#00A63E] rounded-xl border-none px-4 min-w-20
 }
 .secondary-btn{
   @apply text-[#00A63E] border-2 bg-transparent rounded-xl border-[#00A63E]
+}
+.text-accent{
+  @apply text-[#727D73]
+}
+.text-primary{
+  @apply text-[#00A63E]
+}
+.text-secondary{
+  @apply text-[#0E542B]
 }
 
