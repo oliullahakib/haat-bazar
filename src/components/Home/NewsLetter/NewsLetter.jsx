@@ -1,9 +1,11 @@
 import React from 'react';
 import cropImg from "@/assest/corp-img.png"
 import Image from 'next/image';
+import Mydiv from '@/components/Shared/Mydiv';
 const NewsLetter = () => {
     return (
-        <div className=' flex relative justify-center items-center oswald-font bg-linear-to-l from from-[#99EE2D40] via-[#111111] to-[#2DEED740] py-10'>
+        <Mydiv>
+            <div className=' flex relative justify-center items-center oswald-font bg-linear-to-l from from-[#99EE2D40] via-[#111111] to-[#2DEED740] py-10 rounded-2xl'>
             <Image 
             src={cropImg}
             className='absolute left-0 bottom-0 w-70 hidden md:block'
@@ -21,6 +23,7 @@ const NewsLetter = () => {
             className='absolute right-0 bottom-0 w-70 hidden md:block'
              alt="corp" />
         </div>
+        </Mydiv>
     );
 };
 
