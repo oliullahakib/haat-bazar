@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 
 const ProductCard = ({product}) => {
-    const {title,image,price,rating,description}=product
+    const {title,image,price,rating,description,_id}=product
    
     return (
         <div>
@@ -23,7 +23,7 @@ const ProductCard = ({product}) => {
                 </div>
                 <div className="flex justify-between px-5 mb-4">
                     <button className="py-1 px-4 rounded-sm bg-amber-200 text-orange-500 text-lg ">★ {rating}</button>
-                    <Link className='btn btn-primary' href={`/all-product`} >Details</Link>
+                    <Link className='btn btn-primary' href={`/product/${_id}`} >Details</Link>
 
                 </div>
             </div>

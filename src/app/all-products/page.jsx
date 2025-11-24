@@ -37,7 +37,7 @@ const AllProducts = () => {
             </div>
             <div className='apps-container mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4'>
                 {
-                    searchProducts.map(p => <ProductCard key={p._id} product={p} ></ProductCard>)
+                  searchProducts.length!==0? searchProducts.map(p => <ProductCard key={p._id} product={p} ></ProductCard>):allProducts.map(p => <ProductCard key={p._id} product={p} ></ProductCard>)
                 }
 
             </div>
