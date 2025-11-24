@@ -1,3 +1,4 @@
+import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from '@clerk/nextjs';
 import Link from 'next/link';
 import React from 'react';
 
@@ -33,8 +34,21 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end hidden lg:flex">
-                <Link href={"/login"} className="btn btn-primary">Login</Link>
-                <Link href={"/register"} className="btn secondary-btn mx-3">Register</Link>
+                < SignedOut>
+                    <SignInButton>
+                        <button className="bg-[#00A63E] text-white rounded-full font-medium text-sm sm:text-base h-10 sm:h-12 px-4 mx-3 sm:px-5 cursor-pointer">
+                            Sign In
+                        </button>
+                    </SignInButton>
+                    <SignUpButton>
+                        <button className="bg-[#91C4C3] text-white rounded-full font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 cursor-pointer">
+                            Sign Up
+                        </button>
+                    </SignUpButton>
+                </SignedOut>
+                <SignedIn>
+                    <UserButton />
+                </SignedIn>
             </div>
         </div>
     );
