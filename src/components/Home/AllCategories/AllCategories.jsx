@@ -2,7 +2,6 @@ import Mydiv from '@/components/Shared/Mydiv';
 import React from 'react';
 
 const AllCategories = () => {
-    const categories = ['Vegetables', 'Fruits' ,'Dairy', 'Grains']
     return (
         <Mydiv>
             <div className="states  text-black flex flex-col justify-center items-center py-5 rounded-2xl">
