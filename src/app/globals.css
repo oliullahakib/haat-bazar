@@ -26,4 +26,8 @@
 .text-secondary{
   @apply text-[#0E542B]
 }
-
+a.active{
+  border-bottom: 2px solid rgba(62, 122, 62, 0.726);
+  color:#91C4C3 ;
+  font-weight: bold;
+}

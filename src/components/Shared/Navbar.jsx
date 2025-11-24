@@ -4,7 +4,7 @@ import React from 'react';
 const Navbar = () => {
     const links = <>
         <li> <Link href={"/"}>Home</Link></li>
-        <li> <Link href={"/add-products"}>Add Product</Link></li>
+        <li> <Link href={"/add-product"}>Add Product</Link></li>
         <li> <Link href={"/manage-products"}>Manage Products</Link></li>
         <li> <Link href={"/all-products"}>All Products</Link></li>
     </>
