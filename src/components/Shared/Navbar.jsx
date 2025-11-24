@@ -29,7 +29,7 @@ const Navbar = () => {
                 <a className="linear-text text-2xl font-extrabold">HaatBazar</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal text-primary font-bold px-1">
                     {links}
                 </ul>
             </div>

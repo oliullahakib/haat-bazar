@@ -10,7 +10,7 @@ const ProductDetails = async({params}) => {
     const id = res.id
     const result = await fetch(`http://localhost:3100/product/${id}`)
     const product = await result.json()
-     const {title,image,price,rating,description,_id,category,min_quantity,max_quantity,location,arrival_days}=product
+     const {name,image,price,rating,description,_id,category,min_quantity,max_quantity,location,arrival_days}=product
     return (
         <div>
             <div className="hero min-h-screen">
@@ -21,7 +21,7 @@ const ProductDetails = async({params}) => {
                         className="h-80 rounded-lg shadow-2xl"
                     />
                     <div>
-                        <h1 className="text-2xl sm:text-5xl font-bold mb-6">{title}</h1>
+                        <h1 className="text-2xl sm:text-5xl font-bold mb-6">{name}</h1>
                         <p className='text-primary text-2xl font-semibold'><span className='font-extrabold'>Price:</span>{price}tk/kg</p>
                             <p className='text-accent'><span className='font-bold'>Minimum Quantity:</span>{min_quantity}kg</p>
                             <p className='text-accent'><span className='font-bold'>Maximam Quantity:</span>{max_quantity}kg</p>

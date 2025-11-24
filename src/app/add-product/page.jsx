@@ -1,14 +1,19 @@
 'use client'
+'static'
 import Mydiv from '@/components/Shared/Mydiv';
+import { useUser } from '@clerk/nextjs';
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
 
 const AddProduct = () => {
+    const { user, isLoaded } = useUser()
+
     const { register, handleSubmit, formState: { errors } } = useForm()
     const handleProduct = async (data) => {
+        if (!isLoaded) return <p>Loading...</p>
+        data.email = user.emailAddresses[0].emailAddress
         //    making image url 
-        console.log(data.image[0])
         const productImg = data.image[0]
         const formData = new FormData()
         formData.append("image", productImg)
@@ -16,6 +21,7 @@ const AddProduct = () => {
         axios.post(uri, formData)
             .then(res => {
                 data.image = res.data.data.url
+                console.log(data)
                 axios.post('http://localhost:3100/add-product', data)
                     .then(res => {
                         if (res.data.insertedId) {
