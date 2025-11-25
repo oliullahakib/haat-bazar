@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 import React from 'react';
 import { FaArrowLeftLong } from 'react-icons/fa6';
 import { IoStarSharp } from 'react-icons/io5';
@@ -10,6 +11,7 @@ const ProductDetails = async ({ params }) => {
     const id = res.id
     const result = await fetch(`https://haat-bazar-server.vercel.app/product/${id}`)
     const product = await result.json()
+    
     const { name, image, price, rating, description, _id, category, min_quantity, max_quantity, location, arrival_days } = product
     return (
         <div>
