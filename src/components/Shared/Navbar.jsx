@@ -1,13 +1,14 @@
 import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from '@clerk/nextjs';
 import Link from 'next/link';
 import React from 'react';
+import NavLink from './NavLink';
 
 const Navbar = () => {
     const links = <>
-        <li> <Link href={"/"}>Home</Link></li>
-        <li> <Link href={"/add-product"}>Add Product</Link></li>
-        <li> <Link href={"/manage-products"}>Manage Products</Link></li>
-        <li> <Link href={"/all-products"}>All Products</Link></li>
+        <li> <NavLink href={"/"}>Home</NavLink></li>
+        <li> <NavLink href={"/add-product"}>Add Product</NavLink></li>
+        <li> <NavLink href={"/manage-products"}>Manage Products</NavLink></li>
+        <li> <NavLink href={"/all-products"}>All Products</NavLink></li>
     </>
     return (
         <div className="navbar glass-card sticky z-10 top-0 shadow-sm">
