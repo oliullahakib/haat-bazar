@@ -21,7 +21,6 @@ const AddProduct = () => {
         axios.post(uri, formData)
             .then(res => {
                 data.image = res.data.data.url
-                console.log(data)
                 axios.post('http://localhost:3100/add-product', data)
                     .then(res => {
                         if (res.data.insertedId) {
