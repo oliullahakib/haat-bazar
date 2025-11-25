@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Websit Name : HaatBazar
 
-## Getting Started
+----
 
-First, run the development server:
+ <img src="./src/assest/Screenshot-banner.png" alt="banner" />
+ <img src="./src/assest/Screenshot-TopProducts.png" alt="top products" />
+ <img src="./src/assest/Screenshot-ManageProducts.png" alt="manage products" />
+ <img src="./src/assest/Screenshot-AllProducts.png" alt="all products" />
+ <img src="./src/assest/Screenshot-AddProduct.png" alt="add products" />
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+ ----
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ ### Description:
+ HaatBazar is an e-commerce based website. It's solves one of the biggest problem of Bangladeshi Raw Market, that is  Dalal (Middleman). In our website you can directly order vegetables and groceries from the farmers .By doing that, you can ensure you are getting the best ones and save a lot of money. Currently 500+ Farmers are connected with us actively. We are ensuring your health and saving your money. Our website is very user-friendly, easy to use. Check the details make sure and then order it. By that time it’s our responsibility to give you the best products.  Also, you can easily add products and manage them easily .So “ Get fresh, Make fresh, Be fresh” it’s our simple tagline. So don’t waste your time order now. Save farmers and make life fresh.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+ ----
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ ### Key Features of our website:
+- Easy to use.
+- Simple and user-friendly
+- Find your product easily
+- Check product details
+- Easy order process
+- Add product functionality 
+- Manage products functionality 
 
-## Learn More
+----
 
-To learn more about Next.js, take a look at the following resources:
+### Technologies Used:
+Frontend:Next.js
+Backend: Node.js, Express.js
+Authentication: Clerk
+Database: mongodb
+Styling: Tailwind CSS
+Deployment: Varcel (Frontend)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

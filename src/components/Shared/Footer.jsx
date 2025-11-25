@@ -31,6 +31,7 @@ const Footer = () => {
             <aside>
                 <p>Copyright © {new Date().getFullYear()} - All right reserved by Haat-Bazar LTD.</p>
             </aside>
+           
         </footer>
     );
 };
