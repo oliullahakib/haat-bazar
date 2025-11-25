@@ -60,7 +60,7 @@ const ManageProducts = () => {
                                         </div>
                                         <div>
                                             <div className="font-bold">{product.name}</div>
-                                            <div className="text-sm opacity-50">United States</div>
+                                            <div className="text-sm opacity-50">{product.location}</div>
                                         </div>
                                     </div>
                                 </td>

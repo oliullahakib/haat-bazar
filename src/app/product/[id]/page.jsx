@@ -57,7 +57,7 @@ const ProductDetails = async({params}) => {
                                 {description}
                             </p>
                         </div>
-                         <Link href={"/all-products"} className='btn btn-success text-black'><FaArrowLeftLong /> Go To All Apps</Link>
+                         <Link href={"/all-products"} className='btn btn-success text-black'><FaArrowLeftLong /> Go To All Products</Link>
                     </div>
                 </div>
 
