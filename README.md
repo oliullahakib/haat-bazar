@@ -27,10 +27,15 @@
 ----
 
 ### Technologies Used:
-Frontend:Next.js
-Backend: Node.js, Express.js
-Authentication: Clerk
-Database: mongodb
-Styling: Tailwind CSS
-Deployment: Varcel (Frontend)
+- Frontend:Next.js
+
+- Backend: Node.js, Express.js
+
+- Authentication: Clerk
+
+- Database: mongodb
+
+- Styling: Tailwind CSS
+
+- Deployment: Varcel (Frontend)
 
