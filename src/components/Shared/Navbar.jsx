@@ -2,7 +2,8 @@ import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from '@cl
 import Link from 'next/link';
 import React from 'react';
 import NavLink from './NavLink';
-
+import logo from "@/assest/HaatBazar.png"
+import Image from 'next/image';
 const Navbar = () => {
     const links = <>
         <li> <NavLink href={"/"}>Home</NavLink></li>
@@ -24,7 +25,9 @@ const Navbar = () => {
 
                     </ul>
                 </div>
-                <Link href={'/'} className="linear-text text-2xl font-extrabold">HaatBazar</Link>
+                <Link href={'/'} className="linear-text text-2xl font-extrabold">
+                <Image className='w-40 rounded-xl' src={logo} alt='logo' />
+                </Link>
                 
             </div>
             
