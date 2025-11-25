@@ -5,7 +5,7 @@ const AllProducts = () => {
     const [allProducts, setAllProducts] = useState([])
     const [search, setSearch] = useState()
     useEffect(() => {
-        fetch('http://localhost:3100/products')
+        fetch('https://haat-bazar-server.vercel.app/products')
             .then(res => res.json())
             .then(data => setAllProducts(data))
             .catch(err => {
@@ -13,7 +13,7 @@ const AllProducts = () => {
             })
     }, [])
 
-    const searchProducts = allProducts.filter(p=>p.title?.toLowerCase().includes(search?.toLowerCase()))
+    const searchProducts = allProducts.filter(p => p.title?.toLowerCase().includes(search?.toLowerCase()))
     return (
         <div>
             <h1 className='text-primary text-5xl font-extrabold text-center'>All Products</h1>
@@ -37,7 +37,7 @@ const AllProducts = () => {
             </div>
             <div className='apps-container mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4'>
                 {
-                  searchProducts.length!==0? searchProducts.map(p => <ProductCard key={p._id} product={p} ></ProductCard>):allProducts.map(p => <ProductCard key={p._id} product={p} ></ProductCard>)
+                    searchProducts.length !== 0 ? searchProducts.map(p => <ProductCard key={p._id} product={p} ></ProductCard>) : allProducts.map(p => <ProductCard key={p._id} product={p} ></ProductCard>)
                 }
 
             </div>

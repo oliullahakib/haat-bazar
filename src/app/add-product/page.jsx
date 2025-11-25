@@ -21,7 +21,7 @@ const AddProduct = () => {
         axios.post(uri, formData)
             .then(res => {
                 data.image = res.data.data.url
-                axios.post('http://localhost:3100/add-product', data)
+                axios.post('https://haat-bazar-server.vercel.app/add-product', data)
                     .then(res => {
                         if (res.data.insertedId) {
                             Swal.fire({
