@@ -13,7 +13,9 @@ const TopProducts = async () => {
                 </div>
                 <div className='apps-container mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4'>
                     {
-                        topProducts.map(p => <ProductCard key={p._id} product={p} ></ProductCard>)
+                      topProducts.length!==0?<div>
+                        <h2 className='text-center text-2xl text-accent font-bold'>No Data Available!</h2>
+                      </div>:topProducts.map(p => <ProductCard key={p._id} product={p} ></ProductCard>)
                     }
 
                 </div>

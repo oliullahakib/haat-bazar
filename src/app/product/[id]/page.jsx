@@ -9,10 +9,16 @@ import { MdLocationOn } from "react-icons/md";
 const ProductDetails = async ({ params }) => {
     const res = await params
     const id = res.id
-    const result = await fetch(`https://haat-bazar-server.vercel.app/product/${id}`)
-    const product = await result.json()
     
+    const result = await fetch(`https://haat-bazar-server.vercel.app/product/${id}`)
+    if(result.status !==200){
+        notFound()
+    }
+    const product = await result.json()
+
+
     const { name, image, price, rating, description, _id, category, min_quantity, max_quantity, location, arrival_days } = product
+    
     return (
         <div>
             <div className="hero min-h-screen">

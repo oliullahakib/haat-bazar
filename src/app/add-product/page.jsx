@@ -5,13 +5,15 @@ import { useUser } from '@clerk/nextjs';
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
+import Loading from '../loading';
+
 
 const AddProduct = () => {
     const { user, isLoaded } = useUser()
 
     const { register, handleSubmit, formState: { errors } } = useForm()
     const handleProduct = async (data) => {
-        if (!isLoaded) return <p>Loading...</p>
+        if (!isLoaded) return <Loading/>
         data.email = user.emailAddresses[0].emailAddress
         //    making image url 
         const productImg = data.image[0]
